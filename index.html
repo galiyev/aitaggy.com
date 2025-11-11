@@ -356,231 +356,231 @@
     </style>
 </head>
 <body>
-<header>
+    <header>
+        <div class="container">
+            <div class="logo">AITaggy</div>
+            <div class="tagline">Intelligent Image Tagging Powered by AI</div>
+            <div class="subtitle">Automatically generate accurate, relevant tags for your images in seconds</div>
+        </div>
+    </header>
+
     <div class="container">
-        <div class="logo">AITaggy</div>
-        <div class="tagline">Intelligent Image Tagging Powered by AI</div>
-        <div class="subtitle">Automatically generate accurate, relevant tags for your images in seconds</div>
-    </div>
-</header>
+        <div class="main-content">
+            <!-- Demo Section -->
+            <section class="demo-section">
+                <h2>Try It Now - See AI Tagging in Action</h2>
+                
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📸</div>
+                    <div class="upload-text">Drop an image here or click to upload</div>
+                    <div class="upload-hint">Supports JPG, PNG, GIF up to 10MB</div>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                </div>
 
-<div class="container">
-    <div class="main-content">
-        <!-- Demo Section -->
-        <section class="demo-section">
-            <h2>Try It Now - See AI Tagging in Action</h2>
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Analyzing image with AI...</p>
+                </div>
 
-            <div class="upload-area" id="uploadArea">
-                <div class="upload-icon">📸</div>
-                <div class="upload-text">Drop an image here or click to upload</div>
-                <div class="upload-hint">Supports JPG, PNG, GIF up to 10MB</div>
-                <input type="file" id="fileInput" accept="image/*" style="display: none;">
-            </div>
-
-            <div class="loading" id="loading">
-                <div class="spinner"></div>
-                <p>Analyzing image with AI...</p>
-            </div>
-
-            <div class="demo-result" id="demoResult">
-                <div class="preview-container">
-                    <div class="image-preview">
-                        <img id="previewImage" src="" alt="Preview">
-                    </div>
-                    <div class="tags-result">
-                        <h3>Generated Tags:</h3>
-                        <div class="tag-list" id="tagList"></div>
+                <div class="demo-result" id="demoResult">
+                    <div class="preview-container">
+                        <div class="image-preview">
+                            <img id="previewImage" src="" alt="Preview">
+                        </div>
+                        <div class="tags-result">
+                            <h3>Generated Tags:</h3>
+                            <div class="tag-list" id="tagList"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <h2>Why Choose AITaggy?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Process thousands of images per minute with our advanced AI models</p>
+            <!-- Features Section -->
+            <section class="features">
+                <h2>Why Choose AITaggy?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Process thousands of images per minute with our advanced AI models</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Highly Accurate</h3>
+                        <p>99%+ accuracy in object, scene, and concept recognition</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Automatic Processing</h3>
+                        <p>Seamlessly integrate with your existing workflow via API</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Multi-Language</h3>
+                        <p>Generate tags in 50+ languages for global reach</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure & Private</h3>
+                        <p>Enterprise-grade security with complete data privacy</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Custom Training</h3>
+                        <p>Train models on your specific image categories</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Highly Accurate</h3>
-                    <p>99%+ accuracy in object, scene, and concept recognition</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Automatic Processing</h3>
-                    <p>Seamlessly integrate with your existing workflow via API</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Multi-Language</h3>
-                    <p>Generate tags in 50+ languages for global reach</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure & Private</h3>
-                    <p>Enterprise-grade security with complete data privacy</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Custom Training</h3>
-                    <p>Train models on your specific image categories</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Use Cases Section -->
-        <section class="use-cases">
-            <h2>Perfect For</h2>
-            <div class="use-case-list">
-                <div class="use-case">
-                    <h4>🛍️ E-commerce</h4>
-                    <p>Automatically tag product images for better searchability and discovery</p>
+            <!-- Use Cases Section -->
+            <section class="use-cases">
+                <h2>Perfect For</h2>
+                <div class="use-case-list">
+                    <div class="use-case">
+                        <h4>🛍️ E-commerce</h4>
+                        <p>Automatically tag product images for better searchability and discovery</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>📱 Social Media</h4>
+                        <p>Enhance content with relevant hashtags and improve engagement</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>📚 Digital Libraries</h4>
+                        <p>Organize and categorize large image collections efficiently</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>📰 Media & Publishing</h4>
+                        <p>Streamline editorial workflows with automated metadata</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>🎨 Creative Agencies</h4>
+                        <p>Manage and retrieve assets quickly from vast libraries</p>
+                    </div>
+                    <div class="use-case">
+                        <h4>🏢 Enterprise DAM</h4>
+                        <p>Power your Digital Asset Management with intelligent tagging</p>
+                    </div>
                 </div>
-                <div class="use-case">
-                    <h4>📱 Social Media</h4>
-                    <p>Enhance content with relevant hashtags and improve engagement</p>
-                </div>
-                <div class="use-case">
-                    <h4>📚 Digital Libraries</h4>
-                    <p>Organize and categorize large image collections efficiently</p>
-                </div>
-                <div class="use-case">
-                    <h4>📰 Media & Publishing</h4>
-                    <p>Streamline editorial workflows with automated metadata</p>
-                </div>
-                <div class="use-case">
-                    <h4>🎨 Creative Agencies</h4>
-                    <p>Manage and retrieve assets quickly from vast libraries</p>
-                </div>
-                <div class="use-case">
-                    <h4>🏢 Enterprise DAM</h4>
-                    <p>Power your Digital Asset Management with intelligent tagging</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <h2>Ready to Transform Your Image Workflow?</h2>
-            <p>This premium domain is available for acquisition</p>
-            <a href="mailto:galiyev@gmail.com" class="contact-email">galiyev@gmail.com</a>
-        </section>
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <h2>Ready to Transform Your Image Workflow?</h2>
+                <p>This premium domain is available for acquisition</p>
+                <a href="mailto:galiyev@gmail.com" class="contact-email">galiyev@gmail.com</a>
+            </section>
+        </div>
     </div>
-</div>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2024 AITaggy.com - Premium Domain Available for Acquisition</p>
-    </div>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AITaggy.com - Premium Domain Available for Acquisition</p>
+        </div>
+    </footer>
 
-<script>
-    // Demo functionality with simulated AI tagging
-    const uploadArea = document.getElementById('uploadArea');
-    const fileInput = document.getElementById('fileInput');
-    const loading = document.getElementById('loading');
-    const demoResult = document.getElementById('demoResult');
-    const previewImage = document.getElementById('previewImage');
-    const tagList = document.getElementById('tagList');
+    <script>
+        // Demo functionality with simulated AI tagging
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const loading = document.getElementById('loading');
+        const demoResult = document.getElementById('demoResult');
+        const previewImage = document.getElementById('previewImage');
+        const tagList = document.getElementById('tagList');
 
-    // Sample tag databases for different image types
-    const sampleTags = {
-        nature: ['landscape', 'outdoor', 'nature', 'scenic', 'natural', 'environment', 'wilderness', 'beautiful', 'serene', 'peaceful'],
-        people: ['person', 'portrait', 'face', 'human', 'people', 'individual', 'expression', 'lifestyle', 'candid', 'natural'],
-        urban: ['city', 'urban', 'architecture', 'building', 'street', 'modern', 'downtown', 'metropolitan', 'structure', 'skyline'],
-        food: ['food', 'cuisine', 'meal', 'delicious', 'dining', 'culinary', 'gourmet', 'fresh', 'tasty', 'appetizing'],
-        animals: ['animal', 'wildlife', 'creature', 'fauna', 'pet', 'wild', 'nature', 'mammal', 'beautiful', 'natural'],
-        technology: ['technology', 'device', 'digital', 'modern', 'electronics', 'innovation', 'tech', 'gadget', 'contemporary', 'advanced'],
-        default: ['image', 'photo', 'picture', 'visual', 'content', 'digital', 'media', 'photography', 'captured', 'shot']
-    };
-
-    uploadArea.addEventListener('click', () => fileInput.click());
-
-    uploadArea.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        uploadArea.classList.add('dragover');
-    });
-
-    uploadArea.addEventListener('dragleave', () => {
-        uploadArea.classList.remove('dragover');
-    });
-
-    uploadArea.addEventListener('drop', (e) => {
-        e.preventDefault();
-        uploadArea.classList.remove('dragover');
-        const files = e.dataTransfer.files;
-        if (files.length > 0) {
-            handleFile(files[0]);
-        }
-    });
-
-    fileInput.addEventListener('change', (e) => {
-        if (e.target.files.length > 0) {
-            handleFile(e.target.files[0]);
-        }
-    });
-
-    function handleFile(file) {
-        if (!file.type.startsWith('image/')) {
-            alert('Please upload an image file');
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            previewImage.src = e.target.result;
-            simulateAITagging();
+        // Sample tag databases for different image types
+        const sampleTags = {
+            nature: ['landscape', 'outdoor', 'nature', 'scenic', 'natural', 'environment', 'wilderness', 'beautiful', 'serene', 'peaceful'],
+            people: ['person', 'portrait', 'face', 'human', 'people', 'individual', 'expression', 'lifestyle', 'candid', 'natural'],
+            urban: ['city', 'urban', 'architecture', 'building', 'street', 'modern', 'downtown', 'metropolitan', 'structure', 'skyline'],
+            food: ['food', 'cuisine', 'meal', 'delicious', 'dining', 'culinary', 'gourmet', 'fresh', 'tasty', 'appetizing'],
+            animals: ['animal', 'wildlife', 'creature', 'fauna', 'pet', 'wild', 'nature', 'mammal', 'beautiful', 'natural'],
+            technology: ['technology', 'device', 'digital', 'modern', 'electronics', 'innovation', 'tech', 'gadget', 'contemporary', 'advanced'],
+            default: ['image', 'photo', 'picture', 'visual', 'content', 'digital', 'media', 'photography', 'captured', 'shot']
         };
-        reader.readAsDataURL(file);
-    }
 
-    function simulateAITagging() {
-        // Hide upload area and show loading
-        uploadArea.style.display = 'none';
-        demoResult.style.display = 'none';
-        loading.style.display = 'block';
+        uploadArea.addEventListener('click', () => fileInput.click());
 
-        // Simulate AI processing time
-        setTimeout(() => {
-            generateTags();
-            loading.style.display = 'none';
-            demoResult.style.display = 'block';
-        }, 2000);
-    }
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
 
-    function generateTags() {
-        tagList.innerHTML = '';
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
 
-        // Randomly select a category or use default
-        const categories = Object.keys(sampleTags);
-        const randomCategory = categories[Math.floor(Math.random() * categories.length)];
-        const tags = sampleTags[randomCategory];
-
-        // Select 8-12 random tags
-        const numTags = Math.floor(Math.random() * 5) + 8;
-        const selectedTags = [];
-
-        while (selectedTags.length < numTags && selectedTags.length < tags.length) {
-            const tag = tags[Math.floor(Math.random() * tags.length)];
-            if (!selectedTags.includes(tag)) {
-                selectedTags.push(tag);
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
             }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFile(e.target.files[0]);
+            }
+        });
+
+        function handleFile(file) {
+            if (!file.type.startsWith('image/')) {
+                alert('Please upload an image file');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                previewImage.src = e.target.result;
+                simulateAITagging();
+            };
+            reader.readAsDataURL(file);
         }
 
-        // Add tags with staggered animation
-        selectedTags.forEach((tag, index) => {
+        function simulateAITagging() {
+            // Hide upload area and show loading
+            uploadArea.style.display = 'none';
+            demoResult.style.display = 'none';
+            loading.style.display = 'block';
+
+            // Simulate AI processing time
             setTimeout(() => {
-                const tagElement = document.createElement('span');
-                tagElement.className = 'tag';
-                tagElement.textContent = tag;
-                tagList.appendChild(tagElement);
-            }, index * 100);
-        });
-    }
-</script>
+                generateTags();
+                loading.style.display = 'none';
+                demoResult.style.display = 'block';
+            }, 2000);
+        }
+
+        function generateTags() {
+            tagList.innerHTML = '';
+            
+            // Randomly select a category or use default
+            const categories = Object.keys(sampleTags);
+            const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+            const tags = sampleTags[randomCategory];
+            
+            // Select 8-12 random tags
+            const numTags = Math.floor(Math.random() * 5) + 8;
+            const selectedTags = [];
+            
+            while (selectedTags.length < numTags && selectedTags.length < tags.length) {
+                const tag = tags[Math.floor(Math.random() * tags.length)];
+                if (!selectedTags.includes(tag)) {
+                    selectedTags.push(tag);
+                }
+            }
+
+            // Add tags with staggered animation
+            selectedTags.forEach((tag, index) => {
+                setTimeout(() => {
+                    const tagElement = document.createElement('span');
+                    tagElement.className = 'tag';
+                    tagElement.textContent = tag;
+                    tagList.appendChild(tagElement);
+                }, index * 100);
+            });
+        }
+    </script>
 </body>
 </html>
